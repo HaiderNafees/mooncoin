@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 MoonCoin - To The Moon! 🌕</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Righteous&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="stars-background"></div>
+    <div class="cursor-trail-container"></div>
+
+    <!-- Navigation -->
+    <nav class="lunar-nav">
+        <div class="logo">
+            <span class="logo-text">Moon<span class="accent">Coin</span></span>
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">Mission</a>
+            <a href="#tokenomics">Tokenomics</a>
+            <a href="#features">Features</a>
+            <a href="#rewards">Rewards</a>
+        </div>
+        <div class="lunar-menu-toggle">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="lunar-hero">
+        <div class="hero-split">
+            <div class="hero-text">
+                <div class="hero-badge">🚀 Welcome to the Future of Crypto</div>
+                <h1 class="lunar-title">Meet the<br><span class="highlight">MoonCoin</span></h1>
+                <p class="hero-description">
+                    Join the cosmic revolution of decentralized finance. MoonCoin isn't just another cryptocurrency – 
+                    it's your ticket to a new financial frontier!
+                </p>
+                <div class="hero-metrics">
+                    <div class="metric">
+                        <span class="metric-value counter">24,860</span>
+                        <span class="metric-label">Holders</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-value">$0.00042069</span>
+                        <span class="metric-label">Current Price</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#" class="lunar-button primary">Launch App 🚀</a>
+                    <a href="#" class="lunar-button secondary">View Chart 📈</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <canvas id="hero-3d-model" class="hero-model"></canvas>
+                <div class="glow-effect"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="lunar-section about-section">
+        <div class="section-content">
+            <h2 class="section-title">Our Mission 🌕</h2>
+            <div class="lunar-grid">
+                <div class="lunar-card">
+                    <div class="card-icon">🚀</div>
+                    <h3>Community First</h3>
+                    <p>Built by the community, for the community. Every holder is part of our mission.</p>
+                </div>
+                <div class="lunar-card">
+                    <div class="card-icon">💎</div>
+                    <h3>Diamond Hands</h3>
+                    <p>Long-term vision with strong tokenomics and sustainable growth.</p>
+                </div>
+                <div class="lunar-card">
+                    <div class="card-icon">🌟</div>
+                    <h3>Innovation</h3>
+                    <p>Pushing the boundaries of what's possible in DeFi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section id="tokenomics" class="lunar-section tokenomics-section">
+        <div class="section-content">
+            <h2 class="section-title bouncy-text">Tokenomics 🚀</h2>
+            <div class="lunar-tokenomics">
+                <div class="tokenomics-visual">
+                    <div class="moon-chart-container">
+                        <div class="moon-phases">
+                            <div class="moon-phase supply">
+                                <div class="moon-icon">🌕</div>
+                                <h3>Supply</h3>
+                                <span class="token-amount">1,000,000,000,000</span>
+                            </div>
+                            <div class="moon-phase burned">
+                                <div class="moon-icon">🌑</div>
+                                <h3>Burned</h3>
+                                <span class="percentage">50%</span>
+                            </div>
+                            <div class="moon-phase liquidity">
+                                <div class="moon-icon">🌓</div>
+                                <h3>Liquidity</h3>
+                                <span class="percentage">40%</span>
+                            </div>
+                            <div class="moon-phase marketing">
+                                <div class="moon-icon">🌗</div>
+                                <h3>Marketing</h3>
+                                <span class="percentage">10%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tokenomics-details">
+                    <div class="token-card">
+                        <div class="token-icon">🔥</div>
+                        <div class="token-info">
+                            <h3>2% Burn</h3>
+                            <p>Auto-burn on every transaction</p>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <div class="token-icon">💎</div>
+                        <div class="token-info">
+                            <h3>3% Rewards</h3>
+                            <p>Distributed to all holders</p>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <div class="token-icon">🌊</div>
+                        <div class="token-info">
+                            <h3>5% Liquidity</h3>
+                            <p>Added to locked liquidity pool</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="lunar-section features-section">
+        <h2 class="section-title bouncy-text">Awesome Features 🎮</h2>
+        <div class="features-container">
+            <div class="feature-card rocket">
+                <div class="feature-icon-wrap">
+                    <div class="feature-icon">🎮</div>
+                    <div class="icon-glow"></div>
+                </div>
+                <h3 class="bouncy-text">Play & Earn</h3>
+                <p>Play super fun games and earn MoonCoin rewards!</p>
+                <div class="feature-badge">LIVE NOW</div>
+                <div class="sparkles">
+                    <span>✨</span><span>✨</span><span>✨</span>
+                </div>
+            </div>
+            <div class="feature-card alien">
+                <div class="feature-icon-wrap">
+                    <div class="feature-icon">👾</div>
+                    <div class="icon-glow"></div>
+                </div>
+                <h3 class="bouncy-text">NFT Collection</h3>
+                <p>Collect rare space aliens and cosmic treasures!</p>
+                <div class="feature-badge">HOT 🔥</div>
+                <div class="sparkles">
+                    <span>✨</span><span>✨</span><span>✨</span>
+                </div>
+            </div>
+            <div class="feature-card astronaut">
+                <div class="feature-icon-wrap">
+                    <div class="feature-icon">👨‍🚀</div>
+                    <div class="icon-glow"></div>
+                </div>
+                <h3 class="bouncy-text">Space Club</h3>
+                <p>Join our exclusive astronaut community!</p>
+                <div class="feature-badge">WOW</div>
+                <div class="sparkles">
+                    <span>✨</span><span>✨</span><span>✨</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rewards Section -->
+    <section id="rewards" class="lunar-section rewards-section">
+        <h2 class="section-title bouncy-text">Space Rewards 🎁</h2>
+        <div class="rewards-container">
+            <div class="reward-card starter">
+                <div class="reward-header">
+                    <div class="planet-icon">🌎</div>
+                    <h3>Earth Level</h3>
+                    <div class="reward-badge">STARTER</div>
+                </div>
+                <div class="reward-content">
+                    <ul class="reward-list">
+                        <li class="reward-item">
+                            <span class="reward-icon">🎮</span>
+                            <span class="reward-text">Basic Games Access</span>
+                        </li>
+                        <li class="reward-item">
+                            <span class="reward-icon">💰</span>
+                            <span class="reward-text">1% Daily Rewards</span>
+                        </li>
+                        <li class="reward-item">
+                            <span class="reward-icon">💬</span>
+                            <span class="reward-text">Community Chat</span>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="reward-button">Join Now!</a>
+            </div>
+
+            <div class="reward-card pro">
+                <div class="reward-header">
+                    <div class="planet-icon">🌙</div>
+                    <h3>Moon Level</h3>
+                    <div class="reward-badge">POPULAR</div>
+                </div>
+                <div class="reward-content">
+                    <ul class="reward-list">
+                        <li class="reward-item">
+                            <span class="reward-icon">🎯</span>
+                            <span class="reward-text">Pro Games Access</span>
+                        </li>
+                        <li class="reward-item">
+                            <span class="reward-icon">🚀</span>
+                            <span class="reward-text">3% Daily Rewards</span>
+                        </li>
+                        <li class="reward-item">
+                            <span class="reward-icon">🎁</span>
+                            <span class="reward-text">Weekly Airdrops</span>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="reward-button premium">Power Up! 🚀</a>
+            </div>
+
+            <div class="reward-card vip">
+                <div class="reward-header">
+                    <div class="planet-icon">⭐</div>
+                    <h3>Star Level</h3>
+                    <div class="reward-badge">VIP</div>
+                </div>
+                <div class="reward-content">
+                    <ul class="reward-list">
+                        <li class="reward-item">
+                            <span class="reward-icon">👑</span>
+                            <span class="reward-text">VIP Games Access</span>
+                        </li>
+                        <li class="reward-item">
+                            <span class="reward-icon">💫</span>
+                            <span class="reward-text">5% Daily Rewards</span>
+                        </li>
+                        <li class="reward-item">
+                            <span class="reward-icon">🎨</span>
+                            <span class="reward-text">Exclusive NFTs</span>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="reward-button vip">Become VIP ⭐</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="lunar-section roadmap-section">
+        <h2 class="section-title bouncy-text">Space Journey 🚀</h2>
+        <div class="space-journey">
+            <div class="journey-path">
+                <div class="journey-card launch">
+                    <div class="rocket-icon">🚀</div>
+                    <h3 class="bouncy-text">Launch Pad</h3>
+                    <div class="mission-details">
+                        <ul class="mission-list">
+                            <li><span class="check">✅</span> Website Launch</li>
+                            <li><span class="check">✅</span> Community Building</li>
+                            <li><span class="check">✅</span> Social Media</li>
+                        </ul>
+                    </div>
+                    <div class="progress-badge">Mission Complete!</div>
+                </div>
+
+                <div class="journey-card orbit active">
+                    <div class="rocket-icon">🛸</div>
+                    <h3 class="bouncy-text">Orbit Phase</h3>
+                    <div class="mission-details">
+                        <ul class="mission-list">
+                            <li><span class="ongoing">🔄</span> Exchange Listings</li>
+                            <li><span class="ongoing">🔄</span> Game Development</li>
+                            <li><span class="pending">⏳</span> NFT Collection</li>
+                        </ul>
+                    </div>
+                    <div class="progress-badge">In Progress</div>
+                </div>
+
+                <div class="journey-card moon">
+                    <div class="rocket-icon">🌕</div>
+                    <h3 class="bouncy-text">Moon Landing</h3>
+                    <div class="mission-details">
+                        <ul class="mission-list">
+                            <li><span class="pending">🎯</span> Major Exchanges</li>
+                            <li><span class="pending">🎮</span> Game Launch</li>
+                            <li><span class="pending">🌍</span> Global Marketing</li>
+                        </ul>
+                    </div>
+                    <div class="progress-badge">Coming Soon!</div>
+                </div>
+            </div>
+            <div class="space-decorations">
+                <div class="star">⭐</div>
+                <div class="star">✨</div>
+                <div class="star">💫</div>
+                <div class="planet">🪐</div>
+                <div class="astronaut">👨‍🚀</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="lunar-section partners-section">
+        <h2 class="section-title bouncy-text">Space Friends 🤝</h2>
+        <div class="space-friends-container">
+            <div class="friend-card exchange">
+                <div class="friend-avatar">
+                    <div class="avatar-icon">🏦</div>
+                    <div class="glow-effect"></div>
+                </div>
+                <h3 class="bouncy-text">Exchange Friends</h3>
+                <div class="friend-badges">
+                    <span class="badge">PancakeSwap</span>
+                    <span class="badge">UniSwap</span>
+                    <span class="badge">More Soon!</span>
+                </div>
+                <div class="sparkles">
+                    <span>✨</span><span>✨</span><span>✨</span>
+                </div>
+            </div>
+
+            <div class="friend-card security">
+                <div class="friend-avatar">
+                    <div class="avatar-icon">🛡️</div>
+                    <div class="glow-effect"></div>
+                </div>
+                <h3 class="bouncy-text">Security Friends</h3>
+                <div class="friend-badges">
+                    <span class="badge">CertiK</span>
+                    <span class="badge">Hacken</span>
+                    <span class="badge">Verified!</span>
+                </div>
+                <div class="sparkles">
+                    <span>✨</span><span>✨</span><span>✨</span>
+                </div>
+            </div>
+
+            <div class="friend-card gaming">
+                <div class="friend-avatar">
+                    <div class="avatar-icon">🎮</div>
+                    <div class="glow-effect"></div>
+                </div>
+                <h3 class="bouncy-text">Gaming Friends</h3>
+                <div class="friend-badges">
+                    <span class="badge">Unity</span>
+                    <span class="badge">Sandbox</span>
+                    <span class="badge">Play Now!</span>
+                </div>
+                <div class="sparkles">
+                    <span>✨</span><span>✨</span><span>✨</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="lunar-section community-section">
+        <div class="section-content">
+            <h2 class="section-title">Join Our Community 🌟</h2>
+            <div class="community-stats">
+                <div class="stat-box">
+                    <span class="stat-number">50K+</span>
+                    <span class="stat-label">Twitter Followers</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">25K+</span>
+                    <span class="stat-label">Telegram Members</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">30K+</span>
+                    <span class="stat-label">Discord Members</span>
+                </div>
+            </div>
+            <div class="community-links">
+                <a href="#" class="community-button twitter">
+                    <i class="fab fa-twitter"></i>
+                    Follow on Twitter
+                </a>
+                <a href="#" class="community-button telegram">
+                    <i class="fab fa-telegram"></i>
+                    Join Telegram
+                </a>
+                <a href="#" class="community-button discord">
+                    <i class="fab fa-discord"></i>
+                    Join Discord
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Buy Section -->
+    <section id="how-to-buy" class="lunar-section buy-section">
+        <div class="section-content">
+            <h2 class="section-title">How to Buy 💎</h2>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">👛</div>
+                    <h3>Create Wallet</h3>
+                    <p>Download and setup MetaMask or Trust Wallet</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">💰</div>
+                    <h3>Get BNB/ETH</h3>
+                    <p>Purchase BNB or ETH and transfer to your wallet</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">🔄</div>
+                    <h3>Swap Tokens</h3>
+                    <p>Visit PancakeSwap/Uniswap to swap for MoonCoin</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">🌙</div>
+                    <h3>HODL</h3>
+                    <p>Hold MoonCoin and watch your investment grow</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="lunar-section faq-section">
+        <div class="section-content">
+            <h2 class="section-title">FAQ ❓</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is MoonCoin?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>MoonCoin is a community-driven cryptocurrency built on blockchain technology, focusing on innovation and sustainable growth.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is MoonCoin safe?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Our contract is audited by leading security firms, and liquidity is locked forever.</p>
+                    </div>
+                </div>
+                <!-- Add more FAQ items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="lunar-section newsletter-section">
+        <div class="section-content">
+            <h2 class="section-title">Stay Updated 📫</h2>
+            <p class="newsletter-desc">Don't miss important updates and announcements!</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="lunar-button primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="lunar-footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="lunar-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="lunar-icon"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="lunar-icon"><i class="fab fa-discord"></i></a>
+            </div>
+            <p class="copyright">© 2024 MoonCoin - To the Moon! 🚀</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
